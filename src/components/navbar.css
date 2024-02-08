@@ -1,0 +1,122 @@
+
+    .container{
+        background-color: #1863B3;
+        z-index: 1;
+        width: 100%;
+        position: fixed; 
+        top: 0; 
+        body.dark & {
+            background-color: #E9E7F7;
+        }
+    }
+
+
+    .navbar {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        padding: 18px ;
+    }
+    
+    .oscuro{
+        display: flex;
+        padding: 0px 4px;
+        cursor: pointer;
+    }
+
+    .oscuro span{
+        border-radius: 12px;
+        padding: 0px 4px;
+    }
+
+    .oscuro span:first-child{
+        color: #1863B3;
+        background-color: #1863B3;
+    }
+
+    .oscuro span:last-child{
+        color: #E9E7F7;
+        background-color: #E9E7F7;
+    }
+
+    .color span {
+        color: #0fce09;
+        background-color: #0fce09;
+    }
+
+    
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu a {
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        color: #f0f0f0;
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0px 25px;
+        letter-spacing: 1.8px;
+        body.dark & {
+            color: #19191a;
+        }
+    }
+    
+    .menu-icon {
+        display: none;
+        cursor: pointer;
+        
+    }
+    
+    .menu-icon span {
+        height: 3px;
+        width: 25px;
+        background-color: #e9e7e7;
+        margin: 5px 12px;
+    }
+
+    
+    
+    @media (max-width: 850px) {
+        .navbar{
+            justify-content: left;
+            text-align: left;
+        }
+        .logo{
+            display: none;
+        }
+
+        .oscuro{
+            justify-content: right;
+        }
+
+        .menu {
+        display: none;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 100%;
+        background: rgb(27 32 44 / 70%);
+        backdrop-filter: blur(6px);
+        transition: 0.7s;
+        }
+    
+        .menu.open {
+        display: flex;
+        }
+    
+        .menu-icon {
+        display: flex;
+        flex-direction: column;
+        }
+
+        .menu a {
+            margin: 30px auto;
+            font-size: 1.8rem;
+        }
+    }
+    

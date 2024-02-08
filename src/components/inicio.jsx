@@ -1,0 +1,68 @@
+
+import { useState } from "react";
+import "./inicio.css"
+
+const Inicio = () => {
+
+    const [activeIcon, setActiveIcon] = useState(null);
+
+    const apretar = (iconID) => {
+        setActiveIcon(iconID)
+    }
+
+    const soltar = () => {
+        setActiveIcon(null);
+    }
+
+    return(
+        <section className="inicio">
+            <div className="contenedor">
+
+            </div>
+            <div className="contenido-foto">
+                <img src="/src/assets/images/Perfil.jpg" alt="foto"/>
+            </div>
+            <div className="info">
+                <h2> Pablo Risi</h2>
+                <h3> Front End Developer </h3>
+                <h3> Javascript | React JS | C# </h3>
+
+                <div className="span"> 
+                <span> </span>
+                </div>
+
+                <div className="iconos"> 
+
+                <a href="https://wa.me//542994707701"  onMouseEnter={() => apretar("linkedin")} onMouseLeave={soltar}>
+                    <i className="fa-brands fa-linkedin"></i>
+                    {activeIcon === "linkedin" && (
+                        <div className="popup">
+                        <p>Perfil de Linkedin</p>
+                        </div>
+                    )}
+                </a>
+
+                <a href="https://wa.me//542994707701"  onMouseEnter={() => apretar("github")} onMouseLeave={soltar} >
+                    <i className="fa-brands fa-github"></i>
+                    {activeIcon === "github" && (
+                        <div className="popup">
+                        <p>Perfil de Github</p>
+                        </div>
+                    )}
+                </a>
+
+                <a  onMouseEnter={() => apretar("cv")} onMouseLeave={soltar} >  
+                <i className="fa-regular fa-file" ></i>
+                {activeIcon === "cv" && (
+                    <div className="popup">
+                    <p>Descargar cv</p>
+                    </div>
+                    )}
+                </a>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default Inicio;
