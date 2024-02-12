@@ -16,10 +16,15 @@ h2{
 
 .proyectos {
     display: grid;
-    grid-template-columns: repeat(3,2fr);
+    grid-template-columns: repeat(2,2fr);
     gap: 2rem ;
     cursor: pointer;
 }
+
+.proyectos i{
+    color: #100230ea;
+}
+
 
 .productos{
     text-align: center;
@@ -27,8 +32,39 @@ h2{
 }
 
 .productos .image{
-    width: 100%;
+    width: 450px;
     height: auto;
-    background-color: #e7e3e3;
-    object-fit: contain;
+    border-radius: 8px 12px;
+    overflow: hidden;
+    transition: transform 0.5s, opacity 0.4s;
+}
+
+.productos .image:hover{
+    transform: scale(1.1);
+    opacity: 0.9; 
+    filter: brightness(80%);
+}
+
+.productos p{
+    letter-spacing: 1px;
+    padding: 8px;
+}
+
+.productos .link{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+
+.link .boton{
+    background-color: azure;
+    width: 100px;
+}
+
+
+
+@media (max-width: 890px){
+    .proyectos{
+        grid-template-columns: repeat(1,1fr);
+    }
 }

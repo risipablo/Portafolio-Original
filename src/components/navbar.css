@@ -5,6 +5,7 @@
         width: 100%;
         position: fixed; 
         top: 0; 
+        
         body.dark & {
             background-color: #E9E7F7;
         }
@@ -14,8 +15,8 @@
     .navbar {
         display: flex;
         text-align: center;
-        justify-content: space-between;
         padding: 18px ;
+        justify-content: space-between;
     }
     
     .oscuro{
@@ -38,12 +39,6 @@
         color: #E9E7F7;
         background-color: #E9E7F7;
     }
-
-    .color span {
-        color: #0fce09;
-        background-color: #0fce09;
-    }
-
     
     .menu {
         display: flex;
@@ -80,7 +75,6 @@
     
     @media (max-width: 850px) {
         .navbar{
-            justify-content: left;
             text-align: left;
         }
         .logo{
@@ -102,7 +96,7 @@
         top: 100%;
         background: rgb(27 32 44 / 70%);
         backdrop-filter: blur(6px);
-        transition: 0.7s;
+        transition: 0.9s;
         }
     
         .menu.open {
@@ -118,5 +112,6 @@
             margin: 30px auto;
             font-size: 1.8rem;
         }
+
     }
     

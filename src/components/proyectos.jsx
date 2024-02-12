@@ -1,10 +1,10 @@
 
 import { Proyecto } from "./proyecto"
 import "./proyectos.css"
-import image1 from "../assets/images/css.png"
-import image2 from "../assets/images//Git_icon.svg.png"
-import image3 from "../assets/images/javascript.png"
-import image4 from "../assets/images/c.svg"
+import image1 from "../assets/images/1.png"
+import image2 from "../assets/images/game.jpg"
+import image3 from "../assets/images/lista.jpg"
+
 
 export const Proyectos = () => {
     return(
@@ -13,25 +13,54 @@ export const Proyectos = () => {
                 <div className="proyectos">
                     
                     <Proyecto
-                        titulo="2"
+                        titulo="Casa Vita"
+                        descripcion="Web de consultorios de salud"
+                        lenguaje="Creado con HTML, SCSS y JavaScript"
                         src={image1}
-                        descripcion="123456"
+                        git={
+                            <a href="https://github.com/risipablo/casavita.git">
+                                <i className="fab fa-github"></i> 
+                            </a>
+                        }
+                        link={
+                            <a href="https://casa-vita.netlify.app/">
+                                <i className="fa-solid fa-globe"></i>
+                            </a>
+                        }
                     />
                         <Proyecto
-                        titulo="2"
-                        src={image2}
-                        descripcion="123456"
-                    />
-                        <Proyecto
-                        titulo="2"
+                        titulo="Petshop Listado"
+                        descripcion="Listado de productos y gastos de negocio real"
+                        lenguaje="Creado con Html, scss y Javascript"
                         src={image3}
-                        descripcion="123456"
+                        git={
+                            <a href="https://github.com/risipablo/casavita.git">
+                                <i className="fab fa-github"></i> 
+                            </a>
+                        }
+                        link={
+                            <a href="https://casa-vita.netlify.app/">
+                                <i className="fa-solid fa-globe"></i>
+                            </a>
+                        }
                     />
                         <Proyecto
-                        titulo="2"
-                        src={image4}
-                        descripcion="123456"
+                        titulo="Game Quiz"
+                        descripcion="Juego de opción multiple"
+                        lenguaje="Creado con Html, css y Javascript"
+                        src={image2}
+                        git={
+                            <a href="https://github.com/risipablo/casavita.git">
+                                <i className="fab fa-github"></i> 
+                            </a>
+                        }
+                        link={
+                            <a href="https://casa-vita.netlify.app/">
+                                <i className="fa-solid fa-globe"></i>
+                            </a>
+                        }
                     />
+                    
                 </div>
             </section>
     )
