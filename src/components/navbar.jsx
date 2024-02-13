@@ -1,6 +1,6 @@
 
 import{ useState,useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import "./navbar.css"
 
 
@@ -33,30 +33,33 @@ const Navbar = () => {
         localStorage.setItem(modoLocalStorageKey, modoActual);
     }, [isDarkMode]);
 
+
     return (
         <nav>
-            <div className="container">
-                <div className="navbar">
-                <a className='logo'>logo</a>
-                <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
-                    <Link to="/" >Inicio</Link>
-                    <Link to="/sobremi">Sobre Mí</Link>
-                    <Link to="/proyectos">Proyectos</Link>
-                    <Link to="/contacto">Contacto</Link>
-                </div>
-            
-                <div className="menu-icon" onClick={toggleMenu}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div className="oscuro" id="oscuro" onClick={cambiarModo}>
-                    <span></span>
-                    <span></span>
-                </div>
-                </div>
+        <div className="container">
+            <div className="navbar">
+        
+            <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
+                <NavLink className="active" to="/" >Inicio</NavLink>
+                <NavLink className="active" to="/sobremi">Sobre Mí</NavLink>
+                <NavLink className="active" to="/proyectos">Proyectos</NavLink>
+                <NavLink className="active" to="/contacto">Contacto</NavLink>
             </div>
-        </nav>
+        
+            <div className="menu-icon" onClick={toggleMenu}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div className="oscuro" id="oscuro" onClick={cambiarModo}>
+
+                <span></span>
+                <span></span>
+            </div>
+            </div>
+        </div>
+    </nav>
     );
     };
 

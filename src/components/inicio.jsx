@@ -33,7 +33,7 @@ const Inicio = () => {
 
                 <div className="iconos"> 
 
-                <a href="https://wa.me//542994707701"  onMouseEnter={() => apretar("linkedin")} onMouseLeave={soltar}>
+                <a href="www.linkedin.com/in/pablo-risi-b457b1163"  onMouseEnter={() => apretar("linkedin")} onMouseLeave={soltar}>
                     <i className="fa-brands fa-linkedin"></i>
                     {activeIcon === "linkedin" && (
                         <div className="popup">

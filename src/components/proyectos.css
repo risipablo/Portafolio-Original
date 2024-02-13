@@ -1,15 +1,15 @@
 
 .section{
     padding: 70px 0px;
-    max-width: 1200px;
     margin: auto;
     color: #e7e3e3;
     font-family: 'Poppins', sans-serif;
 }
 
-h2{
+.section h2{
+    text-align: center;
     padding: 30px;
-    margin: 12px 0px;
+    margin: 12px auto;
     font-size: 2.6rem;
     font-family: 'Montserrat', sans-serif;;
 }
@@ -19,6 +19,8 @@ h2{
     grid-template-columns: repeat(2,2fr);
     gap: 2rem ;
     cursor: pointer;
+    padding: 12px;
+    height: auto;
 }
 
 .proyectos i{
@@ -29,11 +31,13 @@ h2{
 .productos{
     text-align: center;
     padding: 12px 20px;
+    margin-top: 3%;
+    margin-bottom: 10%;
 }
 
 .productos .image{
     width: 450px;
-    height: auto;
+    
     border-radius: 8px 12px;
     overflow: hidden;
     transition: transform 0.5s, opacity 0.4s;
@@ -52,7 +56,7 @@ h2{
 
 .productos .link{
     display: flex;
-    flex-wrap: wrap;
+    margin: 0 auto;
     padding: 12px;
 }
 
@@ -63,8 +67,14 @@ h2{
 
 
 
-@media (max-width: 890px){
+@media (max-width: 700px){
     .proyectos{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,2fr);
+
     }
+
+    .productos .link{
+        margin: 0 auto;
+    }
+
 }

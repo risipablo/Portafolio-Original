@@ -5,7 +5,7 @@
         width: 100%;
         position: fixed; 
         top: 0; 
-        
+        transition: background-color 0.3s, color 0.3s;
         body.dark & {
             background-color: #E9E7F7;
         }
@@ -21,9 +21,12 @@
     
     .oscuro{
         display: flex;
-        padding: 0px 4px;
+        padding: 0px 8px;
         cursor: pointer;
+        border-left: 2px solid rgb(192, 187, 187);
     }
+
+
 
     .oscuro span{
         border-radius: 12px;
@@ -42,17 +45,18 @@
     
     .menu {
         display: flex;
-        align-items: center;
     }
     
     .menu a {
+        
         font-family: 'Poppins', sans-serif;
         text-decoration: none;
-        color: #f0f0f0;
         font-size: 1rem;
         font-weight: 500;
         margin: 0px 25px;
+        padding: 4px 8px;
         letter-spacing: 1.8px;
+        color: #e9e7e7;
         body.dark & {
             color: #19191a;
         }
@@ -61,7 +65,7 @@
     .menu-icon {
         display: none;
         cursor: pointer;
-        
+        justify-content: left;
     }
     
     .menu-icon span {
@@ -69,21 +73,26 @@
         width: 25px;
         background-color: #e9e7e7;
         margin: 5px 12px;
+        body.dark & {
+            background-color: #19191a;
+        }
+    }
+    
+    .active {
+        color: aqua;
     }
 
     
     
     @media (max-width: 850px) {
         .navbar{
-            text-align: left;
+            justify-content: space-between;
         }
+
         .logo{
             display: none;
         }
 
-        .oscuro{
-            justify-content: right;
-        }
 
         .menu {
         display: none;
@@ -97,6 +106,10 @@
         background: rgb(27 32 44 / 70%);
         backdrop-filter: blur(6px);
         transition: 0.9s;
+
+        body.dark & {
+            background-color:  rgba(175, 176, 179, 0.7);
+        }
         }
     
         .menu.open {
@@ -106,10 +119,12 @@
         .menu-icon {
         display: flex;
         flex-direction: column;
+        justify-content: left;
         }
 
         .menu a {
-            margin: 30px auto;
+            margin: 22px auto;
+            padding: 12px 0px;
             font-size: 1.8rem;
         }
 
