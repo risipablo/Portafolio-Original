@@ -8,7 +8,8 @@ import image3 from "../assets/images/lista.jpg"
 
 export const Proyectos = () => {
     return(
-            <section className = "section">
+        <section className="proyect">
+            <div className = "section">
                 <h2> Proyectos</h2>
                 <div className="proyectos">
                     
@@ -62,6 +63,7 @@ export const Proyectos = () => {
                     />
                     
                 </div>
-            </section>
+            </div>
+        </section>
     )
 }

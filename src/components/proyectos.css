@@ -1,13 +1,19 @@
 
+.proyect{
+    background-image: linear-gradient(to top,rgba( 30,35,38,.8), rgba( 30,35,38,1)),
+    url(/src/assets/images/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 .section{
     padding: 70px 0px;
-    margin: auto;
+    margin: 0 auto;
     color: #e7e3e3;
     font-family: 'Poppins', sans-serif;
 }
 
 .section h2{
-    text-align: center;
     padding: 30px;
     margin: 12px auto;
     font-size: 2.6rem;
@@ -37,7 +43,6 @@
 
 .productos .image{
     width: 450px;
-    
     border-radius: 8px 12px;
     overflow: hidden;
     transition: transform 0.5s, opacity 0.4s;
@@ -77,4 +82,7 @@
         margin: 0 auto;
     }
 
+    .productos .image{
+        width: 100%;
+    }
 }
