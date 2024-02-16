@@ -1,6 +1,8 @@
 
 import { useState } from "react";
 import "./inicio.css"
+import perfil from "../assets/images/Perfil.jpg"
+import cv from "../assets/Download/cv.pdf"
 
 const Inicio = () => {
 
@@ -20,7 +22,7 @@ const Inicio = () => {
 
             </div>
             <div className="contenido-foto">
-                <img src="/src/assets/images/Perfil.jpg" alt="foto"/>
+                <img src={perfil} alt="foto"/>
             </div>
             <div className="info">
                 <h2> Pablo Risi</h2>
@@ -42,7 +44,7 @@ const Inicio = () => {
                     )}
                 </a>
 
-                <a href="https://wa.me//542994707701"  onMouseEnter={() => apretar("github")} onMouseLeave={soltar} >
+                <a href="https://github.com/risipablo"  onMouseEnter={() => apretar("github")} onMouseLeave={soltar} >
                     <i className="fa-brands fa-github"></i>
                     {activeIcon === "github" && (
                         <div className="popup">
@@ -51,7 +53,7 @@ const Inicio = () => {
                     )}
                 </a>
 
-                <a  onMouseEnter={() => apretar("cv")} onMouseLeave={soltar} >  
+                <a  onMouseEnter={() => apretar("cv")} onMouseLeave={soltar} href={cv} >  
                 <i className="fa-regular fa-file" ></i>
                 {activeIcon === "cv" && (
                     <div className="popup">

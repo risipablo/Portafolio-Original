@@ -18,50 +18,65 @@
     display: grid;
     grid-template-columns: repeat(2,2fr);
     gap: 2rem ;
+    margin: 2rem;
     cursor: pointer;
-    padding: 12px;
-    height: auto;
 }
 
 .proyectos i{
     color: #100230ea;
+    body.dark &{
+        color: #e7e3e3;
+    }
 }
 
 
 .productos{
     text-align: center;
-    padding: 12px 20px;
-    margin-top: 3%;
-    margin-bottom: 10%;
+    margin:3%;
+    border: 1px solid #F0F0ED;
+    border-radius: 12px;
+    background-color: #242420;
+    transition: transform 0.5s, opacity 0.4s;
+    body.dark &{
+        background-color: #c4bdbd;
+        border:1px solid #0f0f0e;
+    }
+}
+.productos:hover{
+    opacity: 0.9; 
+    filter: brightness(80%);
+}
+
+.productos h3{
+    padding: 12px;
+    font-weight: 700;
+    font-size: 22px;
 }
 
 .productos .image{
-    width: 450px;
-    border-radius: 8px 12px;
-    overflow: hidden;
-    transition: transform 0.5s, opacity 0.4s;
-}
-
-.productos .image:hover{
-    transform: scale(1.1);
-    opacity: 0.9; 
-    filter: brightness(80%);
+    width: 100%;
+    border-radius: 22px;
+    padding: 12px;
 }
 
 .productos p{
     letter-spacing: 1px;
     padding: 8px;
+    font-weight: 600;
 }
 
 .productos .link{
     display: flex;
     margin: 0 auto;
-    padding: 12px;
+    padding: 18px;
 }
 
 .link .boton{
-    background-color: azure;
+    background-color: #e7e3e3;
     width: 100px;
+    body.dark &{
+        background-color: #272726;
+    }
 }
 
 

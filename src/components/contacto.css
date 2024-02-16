@@ -4,6 +4,9 @@
     color: #e7e3e3;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
+    body.dark &{
+        color: #0f0f0e;
+    }
 }
 
 h1{

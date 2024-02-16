@@ -1,6 +1,6 @@
 
     .container{
-        background-color: #1863B3;
+        background-color: #242420;
         z-index: 1;
         width: 100%;
         position: fixed; 
@@ -20,23 +20,26 @@
     }
     
     .oscuro{
-
         display: flex;
-        padding: 0px 8px;
+        padding: 8px;
         cursor: pointer;
         border-left: 2px solid rgb(192, 187, 187);
+        body.dark &{
+            border-left:2px solid #0f0f0e;
+        }
     }
 
 
 
     .oscuro span{
         border-radius: 12px;
-        padding: 0px 4px;
+        padding:2px 8px;
+        margin: 0px 4px;
     }
 
     .oscuro span:first-child{
-        color: #1863B3;
-        background-color: #1863B3;
+        color: #242420;
+        background-color: #242420;
     }
 
     .oscuro span:last-child{
@@ -60,6 +63,11 @@
         body.dark & {
             color: #0d0d0e;
         }
+    }
+
+    .menu a:hover{
+        transition: .4s;
+        color:#155aeee0;
     }
     
     .menu-icon {
@@ -86,7 +94,7 @@
     
     @media (max-width: 850px) {
         .navbar{
-            justify-content: space-between;
+            padding: 12px;
         }
 
         .logo{
@@ -119,7 +127,6 @@
         .menu-icon {
         display: flex;
         flex-direction: column;
-        justify-content: left;
         }
 
         .menu a {
@@ -127,6 +134,5 @@
             padding: 12px 0px;
             font-size: 1.8rem;
         }
-
     }
     
