@@ -38,13 +38,12 @@
 
 .info h2{
     padding: 18px;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .info h3{
-    flex-wrap:wrap;
-    padding: 18px 22px;
-    font-size: 22px;
+    padding: 18px;
+    font-size: 20px;
     letter-spacing: 3px;
 }
 
@@ -63,7 +62,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 60px;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .iconos i{
     color: #f0f8ff;
@@ -116,6 +115,13 @@ a{
         height: 120vh;
     }
 
+    .info h2{
+        font-size: 4rem;
+    }
+
+    .info h3{
+        font-size: 22px;
+    }
 
     .contenido-foto{
         display: flex;
@@ -125,5 +131,9 @@ a{
 
     .info{
         margin: 0 auto;
+    }
+
+    .iconos{
+        font-size: 4rem;
     }
 }

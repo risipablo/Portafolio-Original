@@ -40,10 +40,10 @@ const Navbar = () => {
             <div className="navbar">
         
             <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
-                <NavLink className="active" to="/" >Inicio</NavLink>
-                <NavLink className="active" to="/sobremi">Sobre Mí</NavLink>
-                <NavLink className="active" to="/proyectos">Proyectos</NavLink>
-                <NavLink className="active" to="/contacto">Contacto</NavLink>
+                <NavLink to="/" ><a className="active">Inicio</a></NavLink>
+                <NavLink  to="/sobremi"><a className="active">Sobre Mí</a></NavLink>
+                <NavLink  to="/proyectos"><a className="active">Proyectos</a></NavLink>
+                <NavLink to="/contacto"><a className="active">Contacto</a></NavLink>
             </div>
         
             <div className="menu-icon" onClick={toggleMenu}>

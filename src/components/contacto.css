@@ -16,6 +16,13 @@ h1{
     font-family: 'Montserrat', sans-serif;;
 }
 
+.contact{
+    
+    padding: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
 form{
     width: 80%;
     padding: 12px 0px;

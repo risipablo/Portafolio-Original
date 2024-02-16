@@ -16,6 +16,7 @@ export const Contacto = () => {
     return(
         <section className="container-contacto">
             <h1> Contacto </h1>
+            <p className="contact">Podes escribirme tambien a pablomrisi@hotmail.com para realizar alguna consulta sobre un proyecto que tengas. en mente  </p>
             <form className="form" onSubmit={handleSubmit(enviar)}>
                 <input type="text" placeholder="ingrese su nombre" {...register("nombre")} ></input>
                 <input type="email" placeholder="ingrese su correo electronico" {...register("correo")} ></input>
