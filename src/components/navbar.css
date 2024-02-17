@@ -68,6 +68,9 @@
     .menu a:hover{
         transition: .4s;
         color:#155aeee0;
+        body.dark & {
+            color:#1e5bdffb;
+        }
     }
     
     .menu-icon {
@@ -89,7 +92,7 @@
     .active a {
         color:#2a66e6fb;
         body.dark & {
-            color:#2a66e6fb;
+            color:#1e5bdffb;
         }
     }
 

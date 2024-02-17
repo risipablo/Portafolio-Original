@@ -1,30 +1,44 @@
 
 import "./contacto.css";
-import { useForm } from "react-hook-form";
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export const Contacto = () => {
+    export const Contacto = () => {
+    const form = useRef();
+    const notify = () => toast.success("¡Su consulta ha sido enviada!");
 
-    const { register, handleSubmit} = useForm();
-    const notify = () => toast("Wow so easy!");
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    const enviar = (data) => {
-        console.log(data);
-    }
+        emailjs
+        .sendForm('service_jsbhj2c', 'template_ncnlt7f', form.current, {
+            publicKey: '3Aon3ElzUvco9EjAq',
+        })
+        .then(
+            () => {
+            console.log("Correo enviado");
+            form.current.reset();
+            },
+            (error) => {
+            console.log('Error en el envio', error.text);
+            },
+        );
+    };
 
-    return(
+    return (
         <section className="container-contacto">
             <h1> Contacto </h1>
-            <p className="contact">Podes escribirme tambien a pablomrisi@hotmail.com para realizar alguna consulta sobre un proyecto que tengas. en mente  </p>
-            <form className="form" onSubmit={handleSubmit(enviar)}>
-                <input type="text" placeholder="ingrese su nombre" {...register("nombre")} ></input>
-                <input type="email" placeholder="ingrese su correo electronico" {...register("correo")} ></input>
-                <textarea type="text" cols="30" rows="10" placeholder="mensaje" {...register("mensaje")} ></textarea>
-                <button  onClick={notify} className="enviar" type="submit"> Enviar </button>
-                <ToastContainer
+            <p className="contact">Podes escribirme tambien a pablomrisi@hotmail.com para realizar alguna consulta sobre un proyecto que tengas en mente.  </p>
+            <form ref={form} onSubmit={sendEmail}>
+            <input type="text" placeholder="ingrese su nombre" name="user_name" />
+            <input type="email"  placeholder="ingrese su correo electronico" name="user_email" />
+            <textarea type="text" cols="30" rows="10" placeholder="mensaje" name="message" />
+            <button onClick={notify} className="enviar"  type="submit" value="Send" > Enviar </button>
+            <ToastContainer
                     position="top-center"
-                    autoClose={5000}
+                    autoClose={3000}
                     hideProgressBar={false}
                     newestOnTop={false}
                     closeOnClick
@@ -32,9 +46,9 @@ export const Contacto = () => {
                     pauseOnFocusLoss
                     draggable
                     pauseOnHover
-                    theme="light"
+                    theme="dark"
                     />
             </form>
         </section>
-    )
+    );
 }

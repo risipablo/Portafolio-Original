@@ -38,7 +38,7 @@
     background-color: #242420;
     transition: transform 0.5s, opacity 0.4s;
     body.dark &{
-        background-color: #c4bdbd;
+        background-color: #dbd7d7;
         border:1px solid #0f0f0e;
     }
 }
