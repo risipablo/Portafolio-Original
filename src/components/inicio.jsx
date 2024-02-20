@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./inicio.css"
 import perfil from "../assets/images/Perfil.jpg"
-import cv from "../assets/Download/cv_backup.pdf"
+import cv from "../assets/Download/cv.pdf"
 
 const Inicio = () => {
 
