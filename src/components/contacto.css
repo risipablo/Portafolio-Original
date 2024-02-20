@@ -18,8 +18,8 @@ h1{
 }
 
 .contact{
-    
     padding: 18px;
+    margin: 12px 20px;
     letter-spacing: 2px;
     text-align: center;
 }
@@ -65,6 +65,8 @@ button:hover{
 }
 
 
-@media (max-width: 700px){
-
+@media (max-width: 300px){
+    .contact{
+        max-width: 300px;
+    }
 }

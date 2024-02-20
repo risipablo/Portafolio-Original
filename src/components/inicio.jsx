@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./inicio.css"
 import perfil from "../assets/images/Perfil.jpg"
-import cv from "../assets/Download/cv.pdf"
+import cv from "../assets/Download/cv_backup.pdf"
 
 const Inicio = () => {
 
@@ -35,7 +35,7 @@ const Inicio = () => {
 
                 <div className="iconos"> 
 
-                <a href="www.linkedin.com/in/pablo-risi-b457b1163"  onMouseEnter={() => apretar("linkedin")} onMouseLeave={soltar}>
+                <a href="https://linkedin.com/in/pablo-risi-b457b1163"  onMouseEnter={() => apretar("linkedin")} onMouseLeave={soltar}>
                     <i className="fa-brands fa-linkedin"></i>
                     {activeIcon === "linkedin" && (
                         <div className="popup">

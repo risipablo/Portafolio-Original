@@ -18,17 +18,10 @@
     display: grid;
     grid-template-columns: repeat(2,2fr);
     gap: 2rem ;
+    padding: 1.8rem;
     margin: 2rem;
     cursor: pointer;
 }
-
-.proyectos i{
-    color: #100230ea;
-    body.dark &{
-        color: #e7e3e3;
-    }
-}
-
 
 .productos{
     text-align: center;
@@ -42,6 +35,7 @@
         border:1px solid #0f0f0e;
     }
 }
+
 .productos:hover{
     opacity: 0.9; 
     filter: brightness(80%);
@@ -54,7 +48,9 @@
 }
 
 .productos .image{
-    width: 100%;
+    max-width: 350px;
+    width: 35vw;
+    object-fit: cover;
     border-radius: 22px;
     padding: 12px;
 }
@@ -73,9 +69,16 @@
 
 .link .boton{
     background-color: #e7e3e3;
-    width: 100px;
+    max-width: 100px;
     body.dark &{
         background-color: #272726;
+    }
+}
+
+.proyectos i{
+    color: #100230ea;
+    body.dark &{
+        color: #e7e3e3;
     }
 }
 
@@ -93,5 +96,14 @@
 
     .productos .image{
         width: 100%;
+    }
+}
+
+@media (max-width: 370px){
+    .productos .link{
+        
+    }
+    .link .boton{
+        padding: 16px;
     }
 }
