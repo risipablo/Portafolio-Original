@@ -17,15 +17,13 @@
 .proyectos {
     display: grid;
     grid-template-columns: repeat(2,2fr);
-    gap: 2rem ;
-    padding: 1.8rem;
-    margin: 2rem;
+    margin: 2rem 1.4rem;
     cursor: pointer;
 }
 
 .productos{
     text-align: center;
-    margin:3%;
+    margin:2rem;
     border: 1px solid #F0F0ED;
     border-radius: 12px;
     background-color: #242420;
@@ -63,7 +61,7 @@
 
 .productos .link{
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
     padding: 18px;
 }
 
@@ -87,8 +85,8 @@
 @media (max-width: 700px){
     .proyectos{
         grid-template-columns: repeat(1,2fr);
-
     }
+
 
     .productos .link{
         margin: 0 auto;
@@ -99,11 +97,11 @@
     }
 }
 
-@media (max-width: 370px){
+@media (max-width: 340px){
     .productos .link{
         
     }
     .link .boton{
-        padding: 16px;
+        padding: 12px 18px;
     }
 }
