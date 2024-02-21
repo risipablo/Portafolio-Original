@@ -17,6 +17,10 @@ const Navbar = () => {
         setIsDarkMode(!isDarkMode);
     };
 
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    }
+
     useEffect(() => {
         const modoLocalStorageKey = "modoOscuro";
         const modoGuardado = localStorage.getItem(modoLocalStorageKey);
@@ -40,10 +44,10 @@ const Navbar = () => {
             <div className="navbar">
         
             <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
-                <NavLink to="/" ><a className="active">Inicio</a></NavLink>
-                <NavLink  to="/sobremi"><a className="active">Sobre Mí</a></NavLink>
-                <NavLink  to="/proyectos"><a className="active">Proyectos</a></NavLink>
-                <NavLink to="/contacto"><a className="active">Contacto</a></NavLink>
+                <NavLink to="/" onClick={closeMenu}><a className="active">Inicio</a></NavLink>
+                <NavLink  to="/sobremi" onClick={closeMenu}><a className="active">Sobre Mí</a></NavLink>
+                <NavLink  to="/proyectos" onClick={closeMenu}><a className="active">Proyectos</a></NavLink>
+                <NavLink to="/contacto" onClick={closeMenu}><a className="active">Contacto</a></NavLink>
             </div>
         
             <div className="menu-icon" onClick={toggleMenu}>

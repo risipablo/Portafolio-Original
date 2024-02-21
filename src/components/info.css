@@ -12,12 +12,14 @@
     }
 }
 
-h1{
+h2{
     padding: 30px;
     margin: 12px 0px;
     font-size: 2.6rem;
     font-family: 'Montserrat', sans-serif;;
 }
+
+
 
 
 .span2{
@@ -40,7 +42,44 @@ h1{
     max-width: 900px;
     padding: 8px 12px;
     letter-spacing: 2px;
+    line-height:2rem;
+    
 }
+
+.articulos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 22px;
+}
+
+article{
+    margin: auto;
+    border: 1px groove #e7e3e3;
+    padding: 30px;
+    border-radius: 1rem;
+    body.dark &{
+        border: 1px groove #0f0f0e;
+    }
+}
+
+h3{
+    font-size: 1.4rem;
+    margin: 8px 0px;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 1.2rem;
+    margin: 8px 0px;
+}
+
+.rol li{
+    
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px 0px;
+}
+
 
 li{
     list-style: none;
@@ -96,6 +135,10 @@ li{
     .parrafo{
         padding: 20px;
     }
+
+    article{
+        margin: 20px auto;
+    }
 }
 
 @media (max-width: 660px){
@@ -103,6 +146,7 @@ li{
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
     }
+
 }
 
 @media(max-width: 480px) {

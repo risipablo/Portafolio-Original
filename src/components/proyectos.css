@@ -17,13 +17,14 @@
 .proyectos {
     display: grid;
     grid-template-columns: repeat(2,2fr);
-    margin: 2rem 1.4rem;
+
     cursor: pointer;
 }
 
 .productos{
+
     text-align: center;
-    margin:2rem;
+    margin:2rem 2.8rem;
     border: 1px solid #F0F0ED;
     border-radius: 12px;
     background-color: #242420;
@@ -36,7 +37,7 @@
 
 .productos:hover{
     opacity: 0.9; 
-    filter: brightness(80%);
+    filter: brightness(70%);
 }
 
 .productos h3{
@@ -46,11 +47,12 @@
 }
 
 .productos .image{
-    max-width: 350px;
+    max-width: 400px;
     width: 35vw;
     object-fit: cover;
     border-radius: 22px;
-    padding: 12px;
+    padding: 0px 6px;
+    margin: 6px auto;
 }
 
 .productos p{
@@ -61,13 +63,13 @@
 
 .productos .link{
     display: flex;
-    justify-content: space-between;
     padding: 18px;
+    margin: 12px;
 }
 
 .link .boton{
+    margin: 0 auto;
     background-color: #e7e3e3;
-    max-width: 100px;
     body.dark &{
         background-color: #272726;
     }
@@ -94,14 +96,16 @@
 
     .productos .image{
         width: 100%;
+        padding: 12px;
     }
 }
 
 @media (max-width: 340px){
-    .productos .link{
-        
-    }
     .link .boton{
         padding: 12px 18px;
+    }
+    
+    .productos .image{
+        padding: 18px;
     }
 }
