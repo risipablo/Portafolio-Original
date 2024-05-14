@@ -15,7 +15,7 @@
     .navbar {
         display: flex;
         text-align: center;
-        padding: 12px ;
+        padding: 12px 22px;
         justify-content: space-between;
     }
     
@@ -55,10 +55,10 @@
         font-family: 'Poppins', sans-serif;
         text-decoration: none;
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 600;
         margin: 0px 12px;
         padding: 4px 8px;
-        letter-spacing: 1.8px;
+        letter-spacing: 2px;
         color: #e9e7e7;
         body.dark & {
             color: #0d0d0e;
@@ -101,7 +101,7 @@
     
     @media (max-width: 850px) {
         .navbar{
-            padding: 12px;
+            padding: 18px;
         }
 
         .logo{
@@ -118,9 +118,8 @@
         height: 100vh;
         position: absolute;
         top: 100%;
-        background: rgb(27 32 44 / 70%);
+        background: rgba(20, 22, 29, 0.8);
         backdrop-filter: blur(6px);
-        transition: 0.9s;
 
         body.dark & {
             background-color:  rgba(175, 176, 179, 0.7);
@@ -137,7 +136,7 @@
         }
 
         .menu a {
-            margin: 22px auto;
+            margin: 2rem auto;
             padding: 8px 0px;
             font-size: 1.8rem;
         }

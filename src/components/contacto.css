@@ -1,72 +1,86 @@
-
-.container-contacto{
+/* Estilos base */
+.container-contacto {
     padding: 70px 0px;
     color: #e7e3e3;
     font-family: 'Poppins', sans-serif;
     max-width: 1200px;
     margin: auto;
     body.dark &{
-        color: #0f0f0e;
+        color: #242420;
     }
 }
 
-h1{
+h1 {
     padding: 30px;
     margin: 12px 0px;
     font-size: 2.6rem;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.contact{
-    padding: 18px;
+.contact {
+    padding: 1.2rem;
     margin: 12px 20px;
     letter-spacing: 2px;
     text-align: center;
+    font-weight: 600;
 }
 
-form{
-    width: 80%;
+form {
+    width: 100%;
     padding: 12px 0px;
     margin: auto;
 }
 
-input, textarea{
+input,
+textarea {
     display: block;
     align-items: center;
-    margin: 35px auto;
-    font-size: 1rem;
-    width: 80%;
-    border:none;
-    padding: 18px 10px;
+    margin:  2rem auto;
+    font-size: 1.2rem;
+    width: 90%;
+    border: none;
+    padding: 1.2rem 2rem;
     background-color: #f8f8f8;
-    box-shadow: 0px 0px 6px  rgba(247, 242, 242, 0.897);
-    border-radius: 20px;
+    border-radius: 12px; 
+    box-shadow: 0px 0px 6px rgba(247, 242, 242, 0.897);
+    body.dark &{
+        background-color: #f1ecec;
+        box-shadow: 0px 0px 6px rgba(31, 30, 30, 0.897);
+    }
 }
 
-button{
+button {
     font-family: 'Poppins', sans-serif;
     display: block;
     margin: auto;
     cursor: pointer;
     font-size: 18px;
-    background-color: #1bb2c9;
+    background-color: #127180;
     color: #e7e3e3;
     border: none;
     padding: 12px 35px;
     border-radius: 12px;
-    transition:.3s;
-    box-shadow: 0px 0px 6px  rgba(247, 242, 242, 0.897);
+    transition: .3s;
+    box-shadow: 0px 0px 6px rgba(247, 242, 242, 0.897);
     line-height: 1.25;
     letter-spacing: 1px;
 }
 
-button:hover{
+button:hover {
     opacity: 0.7;
 }
 
-
-@media (max-width: 300px){
-    .contact{
+@media (max-width: 300px) {
+    .contact {
         max-width: 300px;
     }
 }
+
+
+@media (min-width: 800px) {
+    form{
+        width: 80%;
+    }
+}
+
+

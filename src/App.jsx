@@ -4,14 +4,25 @@ import Inicio from "./components/inicio";
 import { Info } from "./components/info";
 import { Contacto } from "./components/contacto";
 import { Proyectos } from "./components/proyectos";
-
+import { useEffect, useState } from "react";
+import Loader from "./components/loader"
 
 
 function App() {
+  const [loading,setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false),2000)
+    return () => setTimeout(timer)
+  })
   return (
+
     <>
+        { loading ? (
+    <Loader/> 
+    ) : (
       <BrowserRouter>
-      <Navbar/>
+      <Navbar setLoading={setLoading}/>
       <Routes>
         <Route path="/" element={<Inicio />} /> 
         <Route path="/sobremi" element={<Info />} /> 
@@ -19,8 +30,9 @@ function App() {
         <Route path="/contacto" element={<Contacto />} /> 
       </Routes>
       </BrowserRouter>
+    )}
     </>
-
+    
   );
 }
 

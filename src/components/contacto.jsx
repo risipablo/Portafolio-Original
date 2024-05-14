@@ -62,7 +62,6 @@ import 'react-toastify/dist/ReactToastify.css';
             <ToastContainer
                     position="top-center"
                     autoClose={3000}
-                    hideProgressBar={false}
                     newestOnTop={false}
                     closeOnClick
                     rtl={false}

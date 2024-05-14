@@ -1,52 +1,49 @@
 
+import { useEffect } from "react";
 import "./info.css";
 import Skills from "./skills";
-
+import { Experencia } from "./timeline";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Info = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     return(
         <section className="aboutme">
             <div className="section">
-            <h2> Sobre Mí</h2>
-                <div className="parrafo"> 
+            <h2 data-aos="fade-right"> Sobre Mí</h2>
+                <div className="parrafo" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="700"> 
                 <p>
                     ¡Hola! Mi nombre es Pablo Risi, Front-End Developer. 💻 
                 </p>
                 <br />
                 <p>
-                    En la actualidad, me desempeño como desarrollador web de manera FREELANCE, creando experiencias únicas y funcionales para mis clientes. Aunque mi enfoque principal es el Front End, tengo aspiraciones de ampliar mis habilidades y adentrarme en el desarrollo del Back End.
+                    En la actualidad, me desempeño como desarrollador web de manera FREELANCE. Mi enfoque principal es el Front End, tengo aspiraciones de ampliar mis habilidades y adentrarme en el desarrollo del Back End.
                 </p>
                 <br />
                 <p> Continuamente busco expandir mis conocimientos de programación y mantenerme al tanto de las últimas novedades del mundo TECH.</p>
                 </div>
             </div>
 
-            <div className="span2"> 
+            <div className="span2" data-aos="fade-right" data-aos-offset="0"> 
                 <span> </span>
             </div>
 
             <div className="section">
-                <h2> Experiencia</h2>
-                <div className="articulos">
-                    <article>
-                        <h3> Agencia freelance</h3>
-                        <h4> 2022 - actualidad</h4>
-                        <div className="rol">
-                            <li> Paginas y aplicaciones para empredimientos reales </li>
-                            <li> Clases privadas </li>
-                            <li> Proyectos de practicas</li>
-                        </div>
-                    </article>
-                
-                </div>
+                <h2 data-aos="fade-right" > Experiencia</h2>
+                <Experencia/>
             </div>
 
-            <div className="span2"> 
+            <div className="span2" data-aos="fade-left" data-aos-offset="0"> 
                 <span> </span>
             </div>
             
-            <Skills/>
+            <Skills />
         </section>
     )
 }

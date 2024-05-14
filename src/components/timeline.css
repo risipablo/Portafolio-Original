@@ -1,0 +1,81 @@
+
+
+@media (max-width: 767px) {
+    .articulos {
+        padding: 20px; 
+        letter-spacing: 2px;
+    }
+    
+    .vertical-timeline-element-content {
+        background: transparent;
+        border: 1px solid #ebe8e8;
+        body.dark &{
+            border: 1px solid #161616;
+        }
+    }
+
+    .vertical-timeline-element-title,
+    .vertical-timeline-element-subtitle,
+    .vertical-timeline-element-content p,
+    .vertical-timeline-element-content ul {
+        font-family: 'Poppins', sans-serif; 
+        margin-bottom: 10px; 
+    }
+
+    .vertical-timeline-element-title
+    {
+        font-size: 1.6rem;
+    }
+
+    .vertical-timeline-element-subtitle{
+        font-size: 1.2rem;
+    }
+    .rol{
+        margin: 1rem auto ;
+    }
+    .rol li{
+
+        font-weight: 500;
+        margin: 1rem auto; 
+    }
+}
+
+
+@media (min-width: 768px) {
+    .articulos {
+        padding: 40px; 
+        letter-spacing: 2px;
+    }
+
+    .vertical-timeline-element-content {
+        background: transparent ;
+        border: 1px solid #ebe8e8;
+        
+    }
+
+    .vertical-timeline-element-title,
+    .vertical-timeline-element-subtitle,
+    .vertical-timeline-element-content p,
+    .vertical-timeline-element-content ul {
+        font-family: 'Poppins', sans-serif; 
+        margin-bottom: 15px;
+    }
+
+    .vertical-timeline-element-title
+    {
+        font-size: 2.2rem;
+    }
+
+    .vertical-timeline-element-subtitle{
+        font-size: 1.8;
+    }
+
+    .rol{
+        margin: 1rem auto ;
+    }
+    .rol li{
+
+        font-weight: 500;
+        margin: 1rem auto; 
+    }
+}

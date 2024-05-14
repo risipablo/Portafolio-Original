@@ -17,27 +17,19 @@
 .proyectos {
     display: grid;
     grid-template-columns: repeat(2,2fr);
-
     cursor: pointer;
 }
 
 .productos{
-
     text-align: center;
-    margin:2rem 2.8rem;
-    border: 1px solid #F0F0ED;
+    max-width: 500px;
+    margin:2rem;
     border-radius: 12px;
-    background-color: #242420;
+    background-color: #292927;
     transition: transform 0.5s, opacity 0.4s;
     body.dark &{
-        background-color: #dbd7d7;
-        border:1px solid #0f0f0e;
+        background-color: #d1cdcd;
     }
-}
-
-.productos:hover{
-    opacity: 0.9; 
-    filter: brightness(70%);
 }
 
 .productos h3{

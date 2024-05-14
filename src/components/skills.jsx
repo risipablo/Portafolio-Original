@@ -11,13 +11,23 @@ import image8 from "../assets/images/Vitejs-logo.svg.png";
 import image9 from "../assets/images/Bootstrap_logo.svg.png";
 import image10 from "../assets/images/photo.png";
 import image11 from "../assets/images/2560px-Sass_Logo_Color.svg.png";
+import image12 from "../assets/images/chakra.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Skills = () => {
-
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return(
         <section className="habilidades">
-            <h2> Skills </h2>
-            <div className="grilla">
+            <h2 data-aos="fade-right"> Skills </h2>
+            <div className="grilla" 
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="400"
+                data-aos-offset="0">
 
                 <Skill 
                     skill="HTML"
@@ -95,6 +105,13 @@ const Skills = () => {
                     src={image11}
                     title="SASS"
                     alt="SASS-logo"
+                />
+
+                <Skill 
+                    skill="CHAKRA UI"
+                    src={image12}
+                    title="CHAKRA UI"
+                    alt="CHAKRAUI-logo"
                 />
 
             </div>
