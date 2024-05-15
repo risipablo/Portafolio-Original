@@ -22,8 +22,10 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.50.1",
     "react-router-dom": "^6.21.3",
+    "react-slick": "^0.30.2",
     "react-toastify": "^10.0.4",
     "react-vertical-timeline-component": "^3.6.0",
+    "slick-carousel": "^1.8.1",
     "swiffy-slider": "^1.6.0",
     "swiper": "^11.0.6"
   },

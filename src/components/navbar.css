@@ -1,6 +1,7 @@
 
     .container{
         background-color: #242420;
+        cursor: pointer;
         z-index: 1;
         width: 100%;
         position: fixed; 
@@ -15,9 +16,19 @@
     .navbar {
         display: flex;
         text-align: center;
-        padding: 12px 22px;
+        padding: 1rem 22px;
         justify-content: space-between;
+        transition: .3s ease-in-out;
     }
+
+    .navbar:hover {
+        box-shadow: 0px 0px 22px rgba(64, 21, 165, 0.911); 
+        body.dark & {
+            box-shadow: 0px 0px 22px rgba(86, 86, 87, 0.911); 
+        }
+    }
+    
+    
     
     .oscuro{
         display: flex;
@@ -91,7 +102,7 @@
     }
     
     .active a {
-        color:#2a66e6fb;
+        color:#3570f0fb;
         body.dark & {
             color:#1e5bdffb;
         }
@@ -103,6 +114,11 @@
         .navbar{
             padding: 18px;
         }
+
+        .navbar:hover {
+            box-shadow: 0px 0px 0px; 
+        }
+        
 
         .logo{
             display: none;

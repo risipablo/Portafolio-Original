@@ -5,6 +5,9 @@ import Skills from "./skills";
 import { Experencia } from "./timeline";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SimpleSlider from "./slider";
+import { NavLink } from "react-router-dom";
+
 
 export const Info = () => {
     useEffect(() => {
@@ -38,6 +41,33 @@ export const Info = () => {
                 <h2 data-aos="fade-right" > Experiencia</h2>
                 <Experencia/>
             </div>
+
+            <div className="span2" data-aos="fade-down" data-aos-offset="0"> 
+                <span> </span>
+            </div>
+
+            <div className="section">
+                
+                <h2 data-aos="fade-right" > Proyectos </h2>
+                <SimpleSlider />
+                <NavLink  to="/proyectos">
+                    <button className="slide-btn" style={{
+                            
+                            borderRadius: '4px', 
+                            margin:"2.2rem auto 1rem",
+                            padding: '10px 30px',
+                            fontSize: '1.2rem', 
+                            fontWeight:"600",
+                            cursor: 'pointer', 
+                            outline: 'none', 
+                            textDecoration: 'none', 
+                            textAlign: 'center', 
+                        }}>
+                            Ver más
+                        </button>
+                </NavLink>
+            </div>
+
 
             <div className="span2" data-aos="fade-left" data-aos-offset="0"> 
                 <span> </span>

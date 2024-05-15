@@ -4,6 +4,7 @@
     import perfil from "../assets/images/Perfil.jpg";
     import cv from "../assets/Download/cv.pdf";
 
+
     const Inicio = () => {
     const [activeIcon, setActiveIcon] = useState(null);
     

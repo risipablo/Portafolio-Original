@@ -9,7 +9,7 @@
 }
 
 .contenedor{
-    padding: 3rem 0px;
+    padding: 2rem 0px;
 }
 
 .contenido-foto{
@@ -22,8 +22,9 @@
     margin: .6rem auto;
     padding:  1rem;
     display: block;
-    width: 80%;
-    border-radius: 70%;
+    width: 250px;
+    height: 300px;
+    border-radius: 100%;
     cursor: pointer;
 }
 
@@ -132,6 +133,7 @@ a{
 
     .contenido-foto img{
         width: 380px;
+        height: auto;
     }
 
 

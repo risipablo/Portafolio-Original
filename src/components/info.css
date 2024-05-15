@@ -34,18 +34,23 @@ h2{
     }
 }
 
-.parrafo{
+.parrafo {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0 auto;
-    text-align:center;
+    text-align: center;
     font-size: 1.2rem;
     max-width: 900px;
 }
-.parrafo p{
-    letter-spacing: 2px;
-    line-height:2rem;
+
+.parrafo p {
+    letter-spacing: 1px;
+    line-height: 1.6rem; 
     font-weight: 600;
+    margin: 10px; 
 }
+
 
 
 h3{
@@ -108,6 +113,16 @@ li{
     text-align: center;
     justify-content: center;
     font-size: 18px;
+}
+
+.slide-btn{
+    border:1px solid rgb(255, 255, 255);
+    background: rgb(20, 20, 20);
+    body.dark &{
+        background: rgb(224, 222, 222);
+        border:1px solid rgb(29, 28, 28);
+        color: #0f0f0e;
+    }
 }
 
 @media (max-width: 890px){

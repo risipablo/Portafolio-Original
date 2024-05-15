@@ -3,12 +3,10 @@
 
 .loader{
     scroll-behavior: smooth;
-
+    background-color: #abaaad;
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    body.dark {
-        background-color: #abaaad;
-    }
+
 }

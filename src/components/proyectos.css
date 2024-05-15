@@ -4,63 +4,67 @@
     padding: 70px 0px;
     margin: 0 auto;
     color: #e7e3e3;
-    font-family: 'Poppins', sans-serif;
+    
+
 }
 
 .section h2{
     padding: 30px;
     margin: 12px auto;
     font-size: 2.6rem;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Poppins', sans-serif;
 }
 
 .proyectos {
     display: grid;
     grid-template-columns: repeat(2,2fr);
+    letter-spacing: 2px;
     cursor: pointer;
+    
 }
 
 .productos{
     text-align: center;
-    max-width: 500px;
-    margin:2rem;
-    border-radius: 12px;
+    margin:2rem 4rem;
+    border-radius: 9px;
     background-color: #292927;
-    transition: transform 0.5s, opacity 0.4s;
+    transition: transform 0.4s, opacity 1s;
     body.dark &{
         background-color: #d1cdcd;
     }
 }
 
-.productos h3{
-    padding: 12px;
-    font-weight: 700;
-    font-size: 22px;
+.productos:hover {
+    box-shadow: 0px 0px 20px rgba(179, 178, 180, 0.918); 
+    body.dark &{
+        box-shadow: 0px 0px 20px rgba(71, 70, 71, 0.918)
+    }
 }
 
-.productos .image{
-    max-width: 400px;
-    width: 35vw;
-    object-fit: cover;
-    border-radius: 22px;
-    padding: 0px 6px;
-    margin: 6px auto;
+
+.productos h3{
+    padding: 7px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 .productos p{
-    letter-spacing: 1px;
-    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding:  1rem .7rem;
     font-weight: 600;
 }
 
 .productos .link{
     display: flex;
-    padding: 18px;
-    margin: 12px;
+    padding: 1rem 2.2rem;
+    margin: 1rem;
 }
 
 .link .boton{
-    margin: 0 auto;
     background-color: #e7e3e3;
     body.dark &{
         background-color: #272726;
@@ -80,15 +84,13 @@
     .proyectos{
         grid-template-columns: repeat(1,2fr);
     }
+    .productos{
+        margin: 2rem 1.5rem;
+    }
 
 
     .productos .link{
         margin: 0 auto;
-    }
-
-    .productos .image{
-        width: 100%;
-        padding: 12px;
     }
 }
 
@@ -97,7 +99,4 @@
         padding: 12px 18px;
     }
     
-    .productos .image{
-        padding: 18px;
-    }
 }
