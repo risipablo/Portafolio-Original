@@ -2,9 +2,9 @@
 
 
 .section {
-    padding: 70px 0px;
+    padding: 70px auto;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto ;
     color: #e7e3e3;
     font-family: 'Poppins', sans-serif;
     body.dark &{
@@ -116,11 +116,10 @@ li{
 }
 
 .slide-btn{
-    border:1px solid rgb(255, 255, 255);
     background: rgb(20, 20, 20);
     body.dark &{
         background: rgb(224, 222, 222);
-        border:1px solid rgb(29, 28, 28);
+        
         color: #0f0f0e;
     }
 }

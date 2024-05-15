@@ -46,7 +46,8 @@
 
 @media (min-width: 768px) {
     .articulos {
-        padding: 40px; 
+        /* max-width: 600px; */
+        padding: 30px; 
         letter-spacing: 2px;
     }
 

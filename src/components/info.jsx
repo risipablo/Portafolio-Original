@@ -42,7 +42,7 @@ export const Info = () => {
                 <Experencia/>
             </div>
 
-            <div className="span2" data-aos="fade-down" data-aos-offset="0"> 
+            <div className="span2" data-aos="fade-up" data-aos-offset="0"> 
                 <span> </span>
             </div>
 
@@ -68,8 +68,7 @@ export const Info = () => {
                 </NavLink>
             </div>
 
-
-            <div className="span2" data-aos="fade-left" data-aos-offset="0"> 
+            <div className="span2" data-aos="fade-down" data-aos-offset="0"> 
                 <span> </span>
             </div>
             

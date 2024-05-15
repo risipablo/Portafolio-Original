@@ -1,6 +1,6 @@
 
     .container{
-        background-color: #242420;
+        background-color: rgba(36, 36, 32, 0.7);
         cursor: pointer;
         z-index: 1;
         width: 100%;
@@ -8,7 +8,7 @@
         top: 0; 
         transition: background-color 0.3s, color 0.3s;
         body.dark & {
-            background-color: #E9E7F7;
+            background-color: rgb(234, 232, 247,0.7);
         }
     }
 
@@ -50,12 +50,12 @@
 
     .oscuro span:first-child{
         color: #141414;
-        background-color: #242420;
+        background-color: #22221f;
     }
 
     .oscuro span:last-child{
         color: #E9E7F7;
-        background-color: #E9E7F7;
+        background-color: #e4e3ee;
     }
     
     .menu {
@@ -112,7 +112,7 @@
     
     @media (max-width: 850px) {
         .navbar{
-            padding: 18px;
+            padding: 14px;
         }
 
         .navbar:hover {
